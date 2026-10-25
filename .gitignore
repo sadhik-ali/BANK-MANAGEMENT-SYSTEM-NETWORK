@@ -1,0 +1,18 @@
+# Build output
+*.exe
+*.out
+*.o
+*.obj
+*.pdb
+bank
+bank.exe
+
+# Runtime data created by the programs
+accounts.txt
+transactions.txt
+
+# Editor / OS noise
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

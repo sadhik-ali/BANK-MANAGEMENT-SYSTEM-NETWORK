@@ -1,0 +1,44 @@
+name: Build C++ Projects
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Compile (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile every C++ project
+        shell: bash
+        run: |
+          set -e
+          for src in $(find . -name "*.cpp" -not -path "./.git/*"); do
+            echo "::group::Building $src"
+            g++ -std=c++17 -Wall -Wextra "$src" -o "$(basename "$src" .cpp)"
+            echo "OK: $src"
+            echo "::endgroup::"
+          done
+
+      - name: Smoke test the Bank Management System
+        if: matrix.os == 'ubuntu-latest'
+        shell: bash
+        working-directory: bank-management
+        run: |
+          set -e
+          g++ -std=c++17 main.cpp -o bank
+          printf '1\n1001\nTest User\n5000\n3\n1001\n250.5\n4\n1001\n9000\n5\n1001\n2\n1001\n6\n' | ./bank
+          grep -q "1001|Test User|5250.50" accounts.txt
+          grep -q "DEPOSIT" transactions.txt
+          echo "Smoke test passed."
