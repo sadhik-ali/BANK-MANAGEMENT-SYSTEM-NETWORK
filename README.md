@@ -10,9 +10,7 @@
 ![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 *A learning-focused repository: no frameworks, no hidden magic — just standard C++ and file handling.*
-
 </div>
-
 ---
 
 ## 📖 Table of Contents
@@ -34,7 +32,7 @@
 
 ---
 
-## 📌 About The Repository
+## About The Repository
 
 This repository groups small, self-contained systems projects written the **long way on purpose** — every feature is implemented with plain language constructs so a beginner can read top to bottom and understand exactly what happens.
 
