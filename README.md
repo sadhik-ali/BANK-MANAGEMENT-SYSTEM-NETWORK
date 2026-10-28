@@ -286,9 +286,3 @@ You are free to **share** and **adapt** this material for any purpose, even comm
 
 ⚠️ A note for developers: Creative Commons itself recommends a software license such as MIT or GPL for code, because CC BY 4.0 does not include a patent grant or a copyleft clause. CC BY 4.0 is used here at the author's request and remains a valid choice for educational material.
 
-
-<div align="center">
-
-*If this repository helped you learn, consider giving it a ⭐ — it helps other beginners find it.*
-
-</div>
