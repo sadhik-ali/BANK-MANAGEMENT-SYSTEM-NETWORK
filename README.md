@@ -48,6 +48,7 @@ Each project:
 
 ---
 
+
 ## 🗂️ Projects
 
 | # | Project | Language | Concepts Used | Status |
