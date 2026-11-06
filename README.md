@@ -81,6 +81,7 @@ A console-based banking application with **account creation, balance inquiry, de
 
 Every file added to GitHub for this project, with its exact repository path:
 
+
 ```
 NEWTWORK-STTC/
 ├── .github/
@@ -99,6 +100,7 @@ NEWTWORK-STTC/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 
 | Tool | Why | Check |
 |------|-----|-------|
