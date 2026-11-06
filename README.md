@@ -196,6 +196,7 @@ accountNumber|type|amount|timestamp
 | `amount` | Money moved, always positive |
 | `timestamp` | Written by the program as `YYYY-MM-DD HH:MM:SS` |
 
+
 ## 🧠 Code Architecture
 
 Everything lives in `bank-management/main.cpp`, organised bottom-up: the file helpers are declared first, the menu features use them, and `main()` only runs the loop.
