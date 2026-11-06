@@ -2,7 +2,6 @@
 
 <div align="center">
 
-
 # 🏦 Network Static Toolkit
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
